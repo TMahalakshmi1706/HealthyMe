@@ -1,0 +1,252 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #e3f2fd 0%, #d4e4f7 50%, #c5d9f1 100%);
+  padding: 20px;
+  box-sizing: border-box;
+}
+.login-card {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 968px) {
+  .login-card {
+    flex-direction: column;
+  }
+}
+.left-section {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 50px;
+  background: white;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+@media (max-width: 968px) {
+  .left-section {
+    padding: 40px 30px;
+  }
+}
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #e8f4fb 0%, #d4e9f7 100%);
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 968px) {
+  .right-section {
+    min-height: 300px;
+  }
+}
+
+/* Decorations */
+.wave-decoration {
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(139, 195, 245, 0.3) 0%, rgba(100, 181, 246, 0.4) 100%);
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.illustration-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.illustration-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+}
+
+.login-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+.login-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 2rem;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 13px 15px 13px 45px;
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  color: #333;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #5a9fd4;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(90, 159, 212, 0.1);
+}
+.forgot-password {
+  display: block;
+  text-align: right;
+  color: #5a9fd4;
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+.forgot-password:hover {
+  text-decoration: underline;
+}
+.error-message {
+  color: #d32f2f;
+  background: rgba(211, 47, 47, 0.06);
+  border: 1px solid rgba(211, 47, 47, 0.08);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+.login-button {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #5a9fd4 0%, #4a8dc9 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  box-shadow: 0 4px 15px rgba(90, 159, 212, 0.3);
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(90, 159, 212, 0.4);
+}
+
+.login-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.signup-text {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+.signup-link {
+  color: #5a9fd4;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+.pharmacy-shelf {
+  position: absolute;
+  top: 15%;
+  right: 12%;
+  width: 80px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 6px;
+}
+
+.shelf-item {
+  width: 100%;
+  height: 12px;
+  background: linear-gradient(135deg, rgba(90, 159, 212, 0.4) 0%, rgba(74, 141, 201, 0.5) 100%);
+  border-radius: 3px;
+}
+
+.plus-sign {
+  position: absolute;
+  bottom: 25%;
+  right: 15%;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  color: rgba(90, 159, 212, 0.6);
+  z-index: 1;
+  font-weight: 300;
+}
